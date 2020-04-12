@@ -1,7 +1,9 @@
 public class Graph {
+    //This is an Adjacency Matrix implementation
+    boolean[][] graph;
     
     public Graph (int numVertices) {
-        // YOUR CODE HERE
+        graph = new boolean[numVertices][numVertices];
     }
 
     public void addEdge(int i, int j) {

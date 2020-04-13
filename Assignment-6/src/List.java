@@ -1,3 +1,9 @@
 public class List {
-// YOUR CODE HERE (possible additional classes to be used above)
+    //Implementing FIFO Queue
+    public List(){
+    }
+
+    public void add(int x){
+
+    }
 }

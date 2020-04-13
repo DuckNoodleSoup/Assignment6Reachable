@@ -1,8 +1,7 @@
 public class Graph {
     //This is an Adjacency Matrix implementation
 
-    //Testing github
-    
+    //Testing github again
     boolean[][] graph;
     int numVertices;
     

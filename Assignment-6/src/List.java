@@ -1,6 +1,11 @@
 public class List {
-    //Implementing FIFO Queue
-    public List(){
+    //Implementing Hash Table
+    int length;
+    int[] table;
+
+    public List(int l){
+        length = l;
+        table = new int[length];
     }
 
     public void add(int x){

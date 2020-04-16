@@ -26,13 +26,14 @@ public class Graph {
     }
 
     public List outEdges(int i) {
+        List out = new List(numVertices);
         for(int a=0; a<numVertices; a=a+1){
-
+            
         }
     }
 
     public List inEdges(int i) {
-        // YOUR CODE HERE
+
     }
 
     boolean reachable(int source, int destination) {

@@ -1,0 +1,17 @@
+ASSIGNMENT 6 REACHABLE
+
+12-April
+ - Made Adjacency Matrix
+ - Added addEdge, removeEdge, sets coordinates i,j j,i to true or false
+ - Added removeEdge, returns [i][j]
+ - Added List implementation of FIFO Queue to return out - in edges in Graph Class
+
+ For Next
+ - Finish List Implementations
+ - Finish Out and In Edges
+ - Start working on reachable
+
+16-April
+ - List implements Hash Table, out-in Edges creates new List
+ - List takes in integer, number of vertices, to see how many items in the table to create
+ -

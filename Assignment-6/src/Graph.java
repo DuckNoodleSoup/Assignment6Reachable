@@ -26,19 +26,30 @@ public class Graph {
     }
 
     public List outEdges(int i) {
+        //Loop through column "i" until end, add 'a' to list
         List out = new List(numVertices);
         for(int a=0; a<numVertices; a=a+1){
-            
+            if(graph[i][a]){
+                out.add(a);
+            }
         }
+        return out;
     }
 
-    public List inEdges(int i) {
-
+    public List inEdges(int j) {
+        //Loop through column "j" until end, add 'a' to list
+        List in = new List(numVertices);
+        for(int a=0; a<numVertices; a=a+1){
+            if(graph[a][j]){
+                in.add(a);
+            }
+        }
+        return in;
     }
 
     boolean reachable(int source, int destination) {
-        // YOUR CODE HERE
-        // Should true if destination can be reached from source,
-        // or false otherwise
+        //true if source to destination reachable, false otherwise
+        
+
     }
 }

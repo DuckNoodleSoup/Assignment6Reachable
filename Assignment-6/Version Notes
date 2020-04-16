@@ -14,4 +14,11 @@ ASSIGNMENT 6 REACHABLE
 16-April
  - List implements Hash Table, out-in Edges creates new List
  - List takes in integer, number of vertices, to see how many items in the table to create
- -
+ - ListNode now has int storage, next node
+ - Graph.outEdges goes through graph[i][a] (for loop), and adds "a" if true, returns List
+ - List now has 'Hash' method, uses key%17 to create hash
+ - List.add method loops through hash address's linked list until next==null
+ - Graph.inEdges goes through graph[a][i] (for loop), and adds 'a' if true, returns list
+
+ For Next
+ - Start working on Reachable, BFS, DFS? look at implementations.

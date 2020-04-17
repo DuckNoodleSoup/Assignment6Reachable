@@ -9,7 +9,7 @@ public class List {
     }
 
     public void add(int x){
-        a = new ListNode(x);
+        ListNode a = new ListNode(x);
         int h = hash(a);
         ListNode current = table[h];
         if(current == null) {
@@ -26,5 +26,9 @@ public class List {
          int k = h.storage;
          int hash = k%17;
          return hash;
+    }
+
+    public void print(){
+
     }
 }

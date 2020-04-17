@@ -22,3 +22,8 @@ ASSIGNMENT 6 REACHABLE
 
  For Next
  - Start working on Reachable, BFS, DFS? look at implementations.
+
+ 17-April
+  - Graph.reachable Implementing Depth First Search
+  - Creating Stack and StackNode for the Depth First Search
+  - Added print method to List.java

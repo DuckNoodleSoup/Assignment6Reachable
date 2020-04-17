@@ -9,6 +9,11 @@ public class Graph {
         numVertices = n;
         graph = new boolean[numVertices][numVertices];
 
+        //TEST PRINTS\
+        System.out.println();
+        System.out.println("Created Graph with " + numVertices + " vertices.");
+        System.out.println();
+
     }
 
     public void addEdge(int i, int j) {
@@ -49,7 +54,15 @@ public class Graph {
 
     boolean reachable(int source, int destination) {
         //true if source to destination reachable, false otherwise
-        
+        //Implementing Depth First Search
 
+        //1. boolean array to keep track of where we've been
+        boolean[] track = new boolean[numVertices];
+        for(int i=0; i<numVertices; i=i+1){
+            track[i]=false;
+        }
+
+        //2. Stack Data Structure
+        return true;
     }
 }

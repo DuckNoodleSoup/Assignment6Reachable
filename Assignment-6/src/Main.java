@@ -1,5 +1,13 @@
 public class Main {
     public static void main(String[] args) {
+
+        System.out.println("Testing graph functionality:");
+        System.out.print("Creating a graph with 10 vertices. ");
+        Graph g = new Graph(10);
+
+
+        /*
+
         // First test the basic graph functionality
         graphTest();
 
@@ -16,6 +24,10 @@ public class Main {
         for (int i = 0; i < numTests; i++)
             total += results[i];
         System.out.println("Average: " + total / (double) numTests);
+
+
+
+         */
     }
 
     static void graphTest() {

@@ -1,3 +1,4 @@
+//List for Graph's Bucket Hashing, implements Hash table for storage
 public class ListNode {
     int storage;
     ListNode next;

@@ -27,3 +27,19 @@ ASSIGNMENT 6 REACHABLE
   - Graph.reachable Implementing Depth First Search
   - Creating Stack and StackNode for the Depth First Search
   - Added print method to List.java
+
+  - Starting to test functionality:
+    - Graph created,
+    - Testing with graphTest();
+  - List.print created, loops through 17 places, chains through linked lists
+  -I just found out that our edges are directed lol oops
+  - Deleted both directions for Graph.add, delete, find
+  - List.print() fix: now prints once before the while loop so it prints head
+  - Stack.push works
+  - Stack.pop works
+
+  For Next:
+  - Implement Depth First Search in Graph, stack should work ok
+  -
+
+  

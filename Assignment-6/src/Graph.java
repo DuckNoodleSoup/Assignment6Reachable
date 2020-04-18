@@ -9,21 +9,20 @@ public class Graph {
         numVertices = n;
         graph = new boolean[numVertices][numVertices];
 
-        //TEST PRINTS\
+        //TEST
         System.out.println();
         System.out.println("Created Graph with " + numVertices + " vertices.");
         System.out.println();
+        //TEST
 
     }
 
     public void addEdge(int i, int j) {
         graph[i][j] = true;
-        graph[j][i] = true;
     }
 
     public void removeEdge(int i, int j) {
         graph[i][j] = false;
-        graph[j][i] = false;
     }
 
     public boolean hasEdge(int i, int j) {
@@ -32,6 +31,7 @@ public class Graph {
 
     public List outEdges(int i) {
         //Loop through column "i" until end, add 'a' to list
+        //Column "i": source vertex, "a" target vertex
         List out = new List(numVertices);
         for(int a=0; a<numVertices; a=a+1){
             if(graph[i][a]){
@@ -43,6 +43,7 @@ public class Graph {
 
     public List inEdges(int j) {
         //Loop through column "j" until end, add 'a' to list
+        //Column "j": target vertex, "a" source vertex
         List in = new List(numVertices);
         for(int a=0; a<numVertices; a=a+1){
             if(graph[a][j]){
@@ -62,7 +63,8 @@ public class Graph {
             track[i]=false;
         }
 
-        //2. Stack Data Structure
-        return true;
+        //2. Depth First Search: successors to top of frontier stack
+
+
     }
 }

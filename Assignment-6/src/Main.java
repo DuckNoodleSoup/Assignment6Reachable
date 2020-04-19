@@ -5,6 +5,27 @@ public class Main {
         System.out.println("Running graphTest ...");
         graphTest();
 
+        Graph g = new Graph(20);
+        System.out.println("Adding some edges.");
+        g.addEdge(0, 1);
+        g.addEdge(0, 2);
+        g.addEdge(0, 3);
+        g.addEdge(1, 2);
+        g.addEdge(2, 3);
+        g.addEdge(1, 4);
+        g.addEdge(1, 4);
+        g.addEdge(1, 5);
+        g.addEdge(1, 6);
+        g.addEdge(2, 7);
+        g.addEdge(2, 4);
+        g.addEdge(2, 8);
+        g.addEdge(2, 9);
+        g.addEdge(9, 10);
+
+        System.out.println("Reachable: 0,7 "+g.reachable(0,7));
+        System.out.println("Reachable: 0,10 "+g.reachable(0,10));
+
+
         // Then run 100 randomlyAddUntilReachable() tests and print the individual and average results
         int numTests = 100;
         int[] results = new int[numTests];
@@ -18,6 +39,7 @@ public class Main {
         for (int i = 0; i < numTests; i++)
             total += results[i];
         System.out.println("Average: " + total / (double) numTests);
+
 
     }
 
@@ -49,9 +71,12 @@ public class Main {
         g.inEdges(2).print();
         System.out.print("g.outEdges(2).print() => ");
         g.outEdges(2).print();
+        System.out.print("g.outEdges(8).print() => ");
+        g.outEdges(8).print();
         System.out.println("Checking reachablility:");
         System.out.println("g.reachable(0, 6) => " + g.reachable(0, 6));
         System.out.println("g.reachable(2, 6) => " + g.reachable(2, 6));
+        System.out.println("g.reachable(1, 0) => " + g.reachable(1, 0));
     }
 
     static int randomlyAddUntilReachable() {

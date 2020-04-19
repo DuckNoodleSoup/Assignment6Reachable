@@ -55,4 +55,12 @@ public class Stack {
             return t;
         }
     }
+
+    public boolean isEmpty(){
+        if (top==null){
+            System.out.println("Stack tested empty");
+            return true;
+        }
+        return false;
+    }
 }

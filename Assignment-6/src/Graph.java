@@ -53,18 +53,108 @@ public class Graph {
         return in;
     }
 
-    boolean reachable(int source, int destination) {
+    boolean[] visited = new boolean[numVertices];
+
+    public boolean reachable(int source, int destination) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*
         //true if source to destination reachable, false otherwise
         //Implementing Depth First Search
 
-        //1. boolean array to keep track of where we've been
+        //1. Set up: Boolean Array to keep track of where we've been
         boolean[] track = new boolean[numVertices];
-        for(int i=0; i<numVertices; i=i+1){
-            track[i]=false;
+        for (int i = 0; i < numVertices; i = i + 1) {
+            track[i] = false;
         }
+        //and create stack
+        Stack frontier = new Stack();
 
-        //2. Depth First Search: successors to top of frontier stack
+        //2. Depth First Search
+        int current = source;
+        boolean found = false;
+        boolean done = false;
+
+        while (!done) {
+
+            List successors = outEdges(current); //Successors
+
+            //TEST
+            System.out.println("Pushing Successors of: " + current);
+            //TEST
+
+            //Push all successors to the top of the stack
+            if (!track[current]) {
+                //TEST
+                System.out.println("Pushing b/c not yet visited. ");
+                for (int b = 0; b < 17; b = b + 1) {
+                    if (successors.table[b] != null) {
+                        ListNode c = successors.table[b];
+                        //Add everything to frontier
+                        frontier.push(c.storage);
+                        while (c.next != null) {
+                            frontier.push(c.storage);
+                            c = c.next;
+                        }
+                    }
+                }
+            }
 
 
+            //if empty stack
+            if (frontier.isEmpty()) {
+
+                //TEST
+                System.out.println("No more frontier paths, not reachable");
+                //TEST
+
+                return false;
+            }
+
+            //We've seen current, now change
+            track[current] = true;
+
+            //current gets the next in the frontier
+            current = frontier.pop();
+
+            //TEST
+            System.out.println("Changing current to: " + current);
+            //TEST
+
+            if (current == destination) {
+                found = true;
+                done = true;
+            }
+            //If everything's visited, stop loop.
+            done = visitedEverything(track);
+        }
+    return found;
+    }
+
+    //Helper Method for Reachable: did we visit everything?
+    public boolean visitedEverything(boolean[] track){
+        int length = track.length;
+        for(int i=0; i<length; i=i+1){
+            if(track[i]==false){
+                return false;
+            }
+        }
+        return true;
+
+
+        */
     }
 }

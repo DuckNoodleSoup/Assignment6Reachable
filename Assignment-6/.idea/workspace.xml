@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0dd825f6-c16e-476a-8aff-01d413d29451" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Version Notes" beforeDir="false" afterPath="$PROJECT_DIR$/Version Notes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Stack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +40,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Assignment-6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -54,5 +72,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="598" y="160" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586745858940" />
+    <state width="1390" height="220" key="GridCell.Tab.0.bottom" timestamp="1587357444701">
+      <screen x="4" y="23" width="1436" height="877" />
+    </state>
+    <state width="1390" height="220" key="GridCell.Tab.0.bottom/4.23.1436.877@4.23.1436.877" timestamp="1587357444701" />
+    <state width="1390" height="220" key="GridCell.Tab.0.center" timestamp="1587357444698">
+      <screen x="4" y="23" width="1436" height="877" />
+    </state>
+    <state width="1390" height="220" key="GridCell.Tab.0.center/4.23.1436.877@4.23.1436.877" timestamp="1587357444698" />
+    <state width="1390" height="220" key="GridCell.Tab.0.left" timestamp="1587357444697">
+      <screen x="4" y="23" width="1436" height="877" />
+    </state>
+    <state width="1390" height="220" key="GridCell.Tab.0.left/4.23.1436.877@4.23.1436.877" timestamp="1587357444697" />
+    <state width="1390" height="220" key="GridCell.Tab.0.right" timestamp="1587357444699">
+      <screen x="4" y="23" width="1436" height="877" />
+    </state>
+    <state width="1390" height="220" key="GridCell.Tab.0.right/4.23.1436.877@4.23.1436.877" timestamp="1587357444699" />
   </component>
 </project>

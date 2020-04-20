@@ -1,3 +1,5 @@
+import org.omg.CosNaming._BindingIteratorImplBase;
+
 //Stack for Reachable: made for Depth First Search
 public class Stack {
     public StackNode top;
@@ -53,6 +55,14 @@ public class Stack {
             prev.next = null;
             last = prev;
             return t;
+        }
+    }
+
+    public boolean isEmpty(){
+        if(top==null){
+            return true;
+        }else{
+            return false;
         }
     }
 }

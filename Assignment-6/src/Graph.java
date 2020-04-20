@@ -64,7 +64,42 @@ public class Graph {
         }
 
         //2. Depth First Search: successors to top of frontier stack
+        Stack stack = new Stack();
+        stack.push(source);
+        while(!stack.isEmpty()) {
+            int current = stack.pop();
 
+            //TEST
+            System.out.println("Current: "+ current);
+            //TEST
 
+            if (track[current] == false) {
+
+                //TEST
+                System.out.println("Current is now true: "+ current);
+                //TEST
+
+                track[current] = true;
+                if(current==destination){
+
+                    //TEST
+                    System.out.println("Found destination: "+current+" = "+destination);
+                    //TEST
+
+                    return true;
+                }
+                for(int b=0;b<17;b=b+1) {
+                    if (outEdges(current).table[b] != null) {
+                        ListNode c= outEdges(current).table[b];
+                        stack.push(c.storage);
+                        while (c.next != null) {
+                            stack.push(c.storage);
+                            c = c.next;
+                        }
+                    }
+                }
+            }
+        }
+        return false;
     }
 }

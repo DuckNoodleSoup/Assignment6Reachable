@@ -23,7 +23,7 @@ ASSIGNMENT 6 REACHABLE
  For Next
  - Start working on Reachable, BFS, DFS? look at implementations.
 
- 17-April
+17-April
   - Graph.reachable Implementing Depth First Search
   - Creating Stack and StackNode for the Depth First Search
   - Added print method to List.java
@@ -40,6 +40,10 @@ ASSIGNMENT 6 REACHABLE
 
   For Next:
   - Implement Depth First Search in Graph, stack should work ok
-  -
+
+20-April
+ - Finally finished implementation of DFS, everything is in order.
+ - Able to calculate test averages. 
+
 
   

@@ -52,6 +52,23 @@ public class Main {
         System.out.println("Checking reachablility:");
         System.out.println("g.reachable(0, 6) => " + g.reachable(0, 6));
         System.out.println("g.reachable(2, 6) => " + g.reachable(2, 6));
+
+        Graph g2 = new Graph(11);
+        System.out.println("More Edges");
+        g2.addEdge(0, 1);
+        g2.addEdge(0, 2);
+        g2.addEdge(0, 3);
+        g2.addEdge(1, 4);
+        g2.addEdge(1, 5);
+        g2.addEdge(1, 6);
+        g2.addEdge(2, 7);
+        g2.addEdge(2, 9);
+        g2.addEdge(9, 10);
+
+        System.out.println("g.reachable(1, 10) => " + g2.reachable(1, 10));
+        System.out.println("g.reachable(0, 10) => " + g2.reachable(0, 10));
+
+
     }
 
     static int randomlyAddUntilReachable() {
